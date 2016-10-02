@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha ./test/test-example.js",
     "start": "echo '\n\n---- Remeber to rename and add a description to package ----\n\n' && forever src/index.js &",
     "dev": "nodemon index.js"
   },
