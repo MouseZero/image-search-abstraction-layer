@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./test/test-example.js",
+    "test": "gulp mocha",
+    "test-watch": "gulp mocha-watch",
     "start": "echo '\n\n---- Remeber to rename and add a description to package ----\n\n' && forever src/index.js &",
     "dev": "nodemon index.js"
   },
@@ -28,6 +29,9 @@
     "eslint-config-standard": "6.1.0",
     "eslint-plugin-promise": "2.0.1",
     "eslint-plugin-standard": "2.0.0",
+    "gulp": "3.9.1",
+    "gulp-mocha": "3.0.1",
+    "gulp-util": "3.0.7",
     "mocha": "3.1.0",
     "nodemon": "1.10.2"
   }
