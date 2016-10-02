@@ -7,7 +7,11 @@ app.get('/', (req, res, next) => {
   res.send('Hello World')
 })
 
-const port = process.argv[2] || 8080
+app.get('/search', (req, res) => {
+  res.send('Test')
+})
+
+const port = process.argv[2] || process.env.SERVER_PORT || 8080
 app.listen(port, _ => {
   console.log('Node server started on ' + port + '!!!')
 })
