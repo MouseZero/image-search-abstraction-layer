@@ -3,3 +3,4 @@ todos
 todo
 npm-debug.log
 coverage
+.env
