@@ -1,20 +1,8 @@
 const https = require('https')
 require('dotenv').config()
 
-function callback (res) {
-  let string = ''
-  res.on('data', (chunk) => {
-    string += chunk
-  })
-
-  res.on('end', () => {
-    console.log(string)
-    console.log('request ended')
-  })
-}
-
 module.exports = {
-  makeRequest (searchString) {
+  makeRequest (searchString, callback) {
     const uriSearch = encodeURIComponent(searchString)
     const options = {
       host: 'api.cognitive.microsoft.com',
