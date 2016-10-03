@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "gulp mocha",
-    "test-watch": "gulp mocha-watch",
+    "test": "mocha --reporter nyan test/**/*.js",
+    "test-watch": "mocha -w --reporter nyan test/**/*.js",
     "test-coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec",
     "start": "echo '\n\n---- Remeber to rename and add a description to package ----\n\n' && forever src/index.js &",
     "dev": "nodemon src/index.js 3000"
