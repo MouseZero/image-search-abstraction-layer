@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/MouseZero/NodeBase#readme",
   "dependencies": {
-    "bing.search": "1.0.1",
     "dotenv": "2.0.0",
     "express": "4.14.0",
     "forever": "0.15.2"
